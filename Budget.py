@@ -11,9 +11,7 @@ class MainWindow:
         self.buttons()
         self.root.mainloop() # Keep UI alive
 
-###############
-#   WIDGETS   #
-###############
+##########CREATING WIDGETS################
 
     def draw(self, msg):
         self.frameText = tk.Frame(self.root, height=19, width=50)
@@ -47,9 +45,7 @@ class MainWindow:
         items = [self.rentLabel, self.rentEntry, self.billsLabel, self.billsEntry, self.done]
         for item in items: item.pack(pady=5)
 
-#################
-#   FUNCTIONS   #
-#################
+############CREATING FUNCTIONS####################
 
     def calculateBudget(self):
         self.budget = float(self.entry.get() or 0)
